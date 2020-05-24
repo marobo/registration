@@ -36,7 +36,7 @@ and then visit the site
 http://127.0.0.1:8000
 ```
 
-If you wanna like to use on your project please move the registration directory to your templates directory
+If you like to use on your project please move the registration directory to your templates directory
 
 Please follow the step bellow:
 
