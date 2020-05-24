@@ -11,7 +11,7 @@ https://github.com/macdhuibh/django-registration-templates
 https://bitbucket.org/devdoodles/registration_templates/src
 ```
 
-I was made this to include some style for all registrations templates page
+I was modified this to include some style for all registrations templates page
 
 
 ## Usage
