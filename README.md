@@ -25,6 +25,7 @@ git clone https://github.com/marobo/registration.git
 You can try run this registration project on your machine:
 
 ```
+pip install -r requirements.txt
 ./manage.py migrate
 ./manage.py createsuperuser
 ./manage.py runserver
