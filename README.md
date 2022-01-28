@@ -4,25 +4,25 @@ Registration templates
 
 ## Background
 
-This packages based on the following [macdhuibh](https://github.com/macdhuibh/django-registration-templates) and [bitbucket](https://bitbucket.org/devdoodles/registration_templates/src) repo:
+This package based on the following [macdhuibh](https://github.com/macdhuibh/django-registration-templates) and [bitbucket](https://bitbucket.org/devdoodles/registration_templates/src) repos:
 
 ```
 https://github.com/macdhuibh/django-registration-templates
 https://bitbucket.org/devdoodles/registration_templates/src
 ```
 
-I was modified this to include some style for all registrations templates page
+I modified this to include some style in each page
 
 
 ## Usage
 
-First clone the repo:
+If you wan to test on your machine, the first thing you need to clone this repo into your local machine:
 
 ```
 git clone https://github.com/marobo/registration.git
 ```
 
-You can try run this registration project on your machine:
+Install requirements
 
 ```
 pip install -r requirements.txt
@@ -37,9 +37,7 @@ and then visit the site
 http://127.0.0.1:8000
 ```
 
-If you like to use on your project please move the registration directory to your templates directory
-
-Please follow the step bellow:
+If you like to use on your project please move the `registration` directory to your templates directory by follow the step bellow:
 
 ```
 cd templates
@@ -57,7 +55,7 @@ mv css path/to/your/static/css
 mv js path/to/your/static/js
 ```
 
-Adding those line bellow to your `project/urls.py` :
+Adding those line below to your `project/urls.py` :
 
 ```
 from django.conf.urls import include
@@ -67,8 +65,7 @@ urlpatterns = [
 ]
 ```
 
-Change this  `'DIRS': []`, on your `settings.py` to `'DIRS': [os.path.join(BASE_DIR, 'templates')],`
-See in bellow:
+Change this  `'DIRS': []`, on `settings.py` to `'DIRS': [os.path.join(BASE_DIR, 'templates')],`
 
 ```
 TEMPLATES = [
