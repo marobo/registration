@@ -22,7 +22,7 @@ If you wan to test on your machine, the first thing you need to clone this repo 
 git clone https://github.com/marobo/registration.git
 ```
 
-Install requirements
+Install requirements / Django
 
 ```
 pip install -r requirements.txt
