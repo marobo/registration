@@ -84,3 +84,11 @@ TEMPLATES = [
     },
 ]
 ```
+
+# Testing
+
+Run the server and then visit login page, you will see a nice login form
+
+```
+http://127.0.0.1:8004/en/accounts/login/
+```
