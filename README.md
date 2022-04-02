@@ -16,7 +16,7 @@ I modified this to include some style in each page
 
 ## Usage
 
-If you wan to test on your machine, the first thing you need to clone this repo into your local machine:
+If you want to test on your machine, the first thing you need to clone this repo into your local machine:
 
 ```
 git clone https://github.com/marobo/registration.git
@@ -66,12 +66,12 @@ urlpatterns = [
 ```
 
 Change this  `'DIRS': []`, on `settings.py` to `'DIRS': [os.path.join(BASE_DIR, 'templates')],`
-
+This is must be looks like this:
 ```
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -90,5 +90,5 @@ TEMPLATES = [
 Run the server and then visit login page, you will see a nice login form
 
 ```
-http://127.0.0.1:8004/en/accounts/login/
+http://127.0.0.1:8000/en/accounts/login/
 ```
