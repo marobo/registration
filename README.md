@@ -44,9 +44,9 @@ cd templates
 mv registration path/to/your/templates/registration
 ```
 
-`base.html` and `index.html` inside `templates/` are also included but most likely, you'll already have those present in your templates directory.
+`base.html` and `index.html` inside `templates/` are also included but most likely, you'll already have those present in your templates/ directory.
 
-Move static file to your static directory:
+Move static files to your static directory:
 
 ```
 cd ..
@@ -90,5 +90,5 @@ TEMPLATES = [
 Run the server and then visit login page, you will see a nice login form
 
 ```
-http://127.0.0.1:8000/en/accounts/login/
+http://127.0.0.1:8000/accounts/login/
 ```
