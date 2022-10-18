@@ -37,14 +37,15 @@ and then visit the site
 http://127.0.0.1:8000
 ```
 
-If you like to use on your project please move the `registration` directory to your templates directory by follow the step bellow:
+## Implementing
+If you like to implement it on your own project please move the `registration` directory to your templates directory by follow the step below:
 
 ```
 cd templates
 mv registration path/to/your/templates/registration
 ```
 
-`base.html` and `index.html` inside `templates/` are also included but most likely, you'll already have those present in your templates/ directory.
+`base.html` and `index.html` inside `templates/` are also included but most likely, you'll already have those present in your `templates/` directory.
 
 Move static files to your static directory:
 
@@ -55,7 +56,7 @@ mv css path/to/your/static/css
 mv js path/to/your/static/js
 ```
 
-Adding those line below to your `project/urls.py` :
+Adding those lines below to your URLconfig in `project/urls.py` file :
 
 ```
 from django.conf.urls import include
@@ -66,7 +67,9 @@ urlpatterns = [
 ```
 
 Change this  `'DIRS': []`, on `settings.py` to `'DIRS': [os.path.join(BASE_DIR, 'templates')],`
-This is must be looks like this:
+Django will automatically look for the app name and the folder inside naming 'templates'
+
+
 ```
 TEMPLATES = [
     {
