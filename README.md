@@ -16,19 +16,21 @@ I modified this to include some style in each page
 
 ## Usage
 
-To use this on Django Project, you need to clone this repo into your Django project directory
+To use this on Django Project, you need to clone this repo into your Django project directory. After cloning, please remove the **.git** folder and **.gitignore** file so that the registration folder are not as a git anymore.
+
+Run command below via terminal on your Django project root
 ```
 git clone https://github.com/marobo/registration.git
 rm -rf registration/.git/
 rm registration/.gitigonre
 ```
 
-Move registration folder to the your existing templates folder
+Move sub registration folder into your existing **templates** folder
 ```
 mv registration/registration templates/
 ```
 
-Move static folder to your existing static folder, this icluding, `animate.css`, `bootstrap.min.css` and `registration.css` files
+Move static folder to your existing **static** folder, this icluding, `animate.css`, `bootstrap.min.css` and `registration.css` files.
 ```
 mv static/css static/css
 ```
