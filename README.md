@@ -47,7 +47,7 @@ urlpatterns = [
 
 Configuring static files - Make sure that **django.contrib.staticfiles** is included in your **INSTALLED_APPS**.
 
-In your **settings** file, define **STATIC_URL***, for example:
+In your **settings** file, define **STATIC_URL**, for example:
 ```
 STATIC_URL = "static/"
 ```
