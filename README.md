@@ -16,44 +16,21 @@ I modified this to include some style in each page
 
 ## Usage
 
-If you want to test on your machine, the first thing you need to clone this repo into your local machine:
-
+To use this on Django Project, you need to clone this repo into your Django project directory
 ```
 git clone https://github.com/marobo/registration.git
+rm -rf registration/.git/
+rm registration/.gitigonre
 ```
 
-Install requirements / Django
-
+Move registration folder to the your existing templates folder
 ```
-pip install -r requirements.txt
-./manage.py migrate
-./manage.py createsuperuser
-./manage.py runserver
+mv registration/registration templates/
 ```
 
-and then visit the site
-
+Move static folder to your existing static folder, this icluding, `animate.css`, `bootstrap.min.css` and `registration.css` files
 ```
-http://127.0.0.1:8000
-```
-
-## Implementing
-If you like to implement it on your own project please move the `registration` directory to your templates directory by follow the step below:
-
-```
-cd templates
-mv registration path/to/your/templates/registration
-```
-
-`base.html` and `index.html` inside `templates/` are also included but most likely, you'll already have those present in your `templates/` directory.
-
-Move static files to your static directory:
-
-```
-cd ..
-cd static
-mv css path/to/your/static/css
-mv js path/to/your/static/js
+mv static/css static/css
 ```
 
 Adding those lines below to your URLconfig in `project/urls.py` file :
