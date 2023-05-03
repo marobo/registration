@@ -45,6 +45,14 @@ urlpatterns = [
 ]
 ```
 
+Configuring static files - Make sure that **django.contrib.staticfiles** is included in your **INSTALLED_APPS**.
+
+In your **settings** file, define **STATIC_URL***, for example:
+```
+STATIC_URL = "static/"
+```
+So that your templates will using the static template tag to build the URL for the given relative path. 
+
 Change this  `'DIRS': []`, on `settings.py` to `'DIRS': [os.path.join(BASE_DIR, 'templates')],`
 Django will automatically look for the app name and the folder inside naming 'templates'
 
