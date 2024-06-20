@@ -32,7 +32,7 @@ mv registration/registration templates/
 
 Move static folder to your existing **static** folder, this icluding, `animate.css`, `bootstrap.min.css` and `registration.css` files.
 ```
-mv static/css static/css
+mv registration/static/css static/css
 ```
 
 Adding those lines below to your URLconfig in `project/urls.py` file :
