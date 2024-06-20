@@ -50,6 +50,14 @@ Configuring static files - Make sure that **django.contrib.staticfiles** is incl
 In your **settings** file, define **STATIC_URL**, for example:
 ```
 STATIC_URL = "static/"
+
+# Path where static files will be collected when run ./manage.py collectstatic
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Additional locations of static files
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 ```
 So that your templates will using the static template tag to build the URL for the given relative path. 
 
